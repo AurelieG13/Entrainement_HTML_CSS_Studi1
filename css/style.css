@@ -1,0 +1,21 @@
+.logo{
+    width: 40%;
+}
+
+.img_asso{
+    width:50%;
+    position: absolute;
+    margin-left: 25vw;
+}
+
+.navbar{
+    background: radial-gradient(closest-side, white,white,white, rgb(18, 234, 241) )
+}
+
+@media screen and (width >= 992px){
+    .img_asso{
+        opacity: 0;
+    }
+}
+
+    
