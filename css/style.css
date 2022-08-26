@@ -9,7 +9,7 @@
 }
 
 .navbar{
-    background: radial-gradient(closest-side, white,white,white, rgb(18, 234, 241) )
+    background: radial-gradient(closest-side, white,white,white, rgb(70, 241, 18) )
 }
 
 @media screen and (width >= 992px){
