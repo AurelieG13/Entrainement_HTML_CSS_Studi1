@@ -12,3 +12,49 @@
         width: 50%;
     }
 }
+
+
+.container__cats{
+    display: flex;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container__cats-title{
+    background-color: aquamarine;
+    text-align: center;
+    font-size: 48px;
+    margin-top: 60px;
+}
+
+.container__cats-text{
+    background-color: aquamarine;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.card{
+    padding: 3px;
+    margin: 10px;
+    text-align: center;
+}
+
+.card-img-top{
+    max-width: fit-content;
+}
+
+.cats{
+    background-color: blueviolet;
+}
+
+.kitten{
+    background-color: yellowgreen;
+}
+
+.img-head{
+    width: 20%;
+}
+
