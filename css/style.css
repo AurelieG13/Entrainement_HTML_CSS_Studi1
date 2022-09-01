@@ -1,20 +1,93 @@
-.nav__container-logo{
+.nav__container-logo {
     display: block;
     margin: 0px auto;
 }
 
-.navbar{
+.navbar {
     background: linear-gradient(45deg, white,#00CED1,#00CED1, #5F9EA0)
 }
 
-@media screen and (width <= 800px){
+@media screen and (width <= 800px) {
     .nav__container-logo{
         width: 50%;
     }
 }
 
+.container__asso {
+    background-color: green;
+    text-align: center;
+    font-size: 50px;
+}
 
-.container__cats{
+.container__asso-history {
+    background-color: grey;
+    font-size: 28px;
+}
+
+.container__asso-history-title {
+    background-color: aqua;
+    margin-left: 20%;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 20px;
+    padding: 15px 70px;
+    border: solid 3px blue;
+}
+
+.container__asso-history-title:hover{
+    background-color: pink;
+}
+
+.container__asso-history-title:hover ~ .container__asso-history-text {
+        opacity: 1;
+        pointer-events:inherit;
+        position : relative;
+}
+
+.container__asso-history-text {
+    background-color: orange;
+    font-size: 28px;
+    opacity: 0;
+    pointer-events: none;
+    position : absolute;
+    transition: all 0.5s ease-out;
+}
+
+.container__asso-day {
+    background-color: yellow;
+    font-size: 28px;
+    position: relative;
+}
+
+.container__asso-day-title {
+    background-color: blue;
+    margin-left: 20%;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 20px;
+    padding: 15px 70px;
+    border: solid 3px aqua;
+}
+
+.container__asso-day-title:hover{
+    background-color: pink;
+}
+
+.container__asso-day-title:hover ~ .container__asso-day-text {
+        opacity: 1;
+        pointer-events:inherit;
+        position : relative;
+}
+
+.container__asso-day-text {
+    background-color: brown;
+    opacity: 0;
+    pointer-events: none;
+    position : absolute;
+    transition: all 0.5s ease-out;
+}
+
+.container__cats {
     display: flex;
     background-color: aquamarine;
     justify-content: center;
@@ -22,39 +95,45 @@
 }
 
 
-.container__cats-title{
+.container__cats-title {
     background-color: aquamarine;
     text-align: center;
     font-size: 48px;
     margin-top: 60px;
 }
 
-.container__cats-text{
+.container__cats-text {
     background-color: aquamarine;
     text-align: center;
     font-size: 20px;
 }
 
 
-.card{
+.card {
     padding: 3px;
     margin: 10px;
     text-align: center;
 }
 
-.card-img-top{
+.card-img-top {
     max-width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.cats{
+.cats {
     background-color: blueviolet;
 }
 
-.kitten{
+.kitten {
     background-color: yellowgreen;
 }
 
-.img-head{
+.img-head {
     width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
