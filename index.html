@@ -16,7 +16,6 @@
 <body>
     <header>
         <nav class="nav__container container-fluid navbar navbar-light bg-light">
-            
             <button 
                 class="navbar-toggler"
                 type="button"
@@ -28,15 +27,15 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class= "collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-2">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#sectionAssociation">L'association</a>
+                        <a class="nav-link" href="#sectionAssociation">L'association</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="sectionChats">Chats à l'adoption</a>
+                        <a class="nav-link" href="#sectionChats">Chats à l'adoption</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="sectionChatons"> Chatons à l'adoption</a>
+                        <a class="nav-link" href="#sectionChatons"> Chatons à l'adoption</a>
                     </li>
                 </ul>
             </div>
@@ -46,7 +45,7 @@
 
     <main>
         <!-- section 1 - L'association -->
-        <section>
+        <section id="sectionAssociation">
             <h2 class="container__asso">L'association</h2>
             <div class="container__asso-history">
                 <p class="container__asso-history-title">Notre Histoire</p>
@@ -61,7 +60,7 @@
         </section>
 
         <!-- section 2 - Les chats à l'adoption -->
-        <section class="cats">
+        <section class="cats" id="sectionChats">
             <img class="img-head" src="./images/imgChatBrown.jpg" alt="Dessin de chat marron">
             <h2 class="container__cats-title">Les chats à l'adoption</h2>
             <p class="container__cats-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis cupiditate ad suscipit hic. Laboriosam placeat quam eligendi eum beatae temporibus soluta odit porro culpa non quasi commodi, aliquid mollitia totam!</p>
@@ -115,7 +114,7 @@
         </section>
 
         <!-- section 3 - Les chatons à l'adoption -->
-        <section class="kitten">
+        <section class="kitten" id="sectionChatons">
             <img class="img-head" src="./images/chaton2.jpg" alt="Photo chaton">
             <h2 class="container__cats-title">Les chatons à l'adoption</h2>
             <p class="container__cats-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis cupiditate ad
@@ -171,8 +170,33 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="bd-footer py-4 py-md-5 mt-5 bg-light">
+        <div class="container py-4 py-md-5 px-4 px-md-3">
+            <div class="row row-cols-3 container__footer">
+                <div class="col-lg-3 mb-3">
+                    <h5 class="container__footer-title">Nous suivre</h5>
+                    <div class="container__footer-social">
+                        <button class="btn btn-social-share me-2"><i class="bi bi-linkedin"></i></button>
+                        <button class="btn btn-social-share me-2"><i class="bi bi-facebook"></i></button>
+                        <button class="btn btn-social-share me-2"><i class="bi bi-twitter"></i></button>
+                        <button class="btn btn-social-share me-2"><i class="bi bi-pinterest"></i></button>
+                    </div>
+                    
+                    <a href="#" class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none"></a>
+                </div>
 
+                <div>
+                    <h5 class="container__footer-title">Nous contacter</h5>
+                    <div class="container__footer-contact" >
+                    <p><span>Adresse</span><br>
+                        1350 Chemin des Vences - 13122 Ventabren</p>
+                    <a href="tel:+33624729309">Nous appeler - 06.24.72.93.09</a> 
+                    <br>
+                    <a href="mailto:guichardon.aurelie@gmail.com">Nous envoyer un mail</a>
+                </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 <!-- JavaScript Bundle with Popper -->

@@ -1,22 +1,33 @@
 .nav__container-logo {
     display: block;
     margin: 0px auto;
+    width : 50%;
 }
 
 .navbar {
-    background: linear-gradient(45deg, white,#00CED1,#00CED1, #5F9EA0)
+    background: linear-gradient(45deg, white,#00CED1,#00CED1, #5F9EA0,white);
 }
 
-@media screen and (width <= 800px) {
+@media screen and (width >= 800px) {
     .nav__container-logo{
-        width: 50%;
+        width: 80%;
     }
+}
+
+section {
+    background-color: rgba(128, 128, 128, 0.082);
+}
+
+main {
+    background-color: rgba(128, 128, 128, 0.082);
 }
 
 .container__asso {
     background-color: green;
     text-align: center;
     font-size: 50px;
+    margin-top: 150px;
+    margin-bottom: 30px;
 }
 
 .container__asso-history {
@@ -34,7 +45,7 @@
     border: solid 3px blue;
 }
 
-.container__asso-history-title:hover{
+.container__asso-history-title:hover {
     background-color: pink;
 }
 
@@ -69,7 +80,7 @@
     border: solid 3px aqua;
 }
 
-.container__asso-day-title:hover{
+.container__asso-day-title:hover {
     background-color: pink;
 }
 
@@ -89,9 +100,16 @@
 
 .container__cats {
     display: flex;
+    flex-direction: column;
     background-color: aquamarine;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (width >= 800px) {
+    .container__cats{
+        flex-direction: row;
+    }
 }
 
 
@@ -113,10 +131,12 @@
     padding: 3px;
     margin: 10px;
     text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .card-img-top {
-    max-width: fit-content;
+    /* max-width: fit-content; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -124,10 +144,14 @@
 
 .cats {
     background-color: blueviolet;
+    margin-top: 150px;
+    margin-bottom: 30px;
 }
 
 .kitten {
     background-color: yellowgreen;
+    margin-top: 150px;
+    margin-bottom: 30px;
 }
 
 .img-head {
@@ -137,3 +161,44 @@
     margin-right: auto;
 }
 
+.container__footer {
+    display: flex;
+    border: solid 2px black;
+    border-radius: 20px;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+}
+
+.container__footer-title {
+    text-align: center;
+    background-color: aliceblue;
+    margin-top: 30px;
+    font-size: 25px;
+    border-radius: 20px;
+
+}
+
+.container__footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__footer-contact {
+    text-align: center;
+    font-size: 20px;
+}
+
+span {
+    font-weight: bolder;
+}
+
+a {
+    color: black;
+}
+
+footer {
+    background: linear-gradient(45deg, white,#00CED1,#00CED1, #5F9EA0,white);
+}
