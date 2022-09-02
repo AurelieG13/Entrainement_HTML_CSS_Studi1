@@ -1,10 +1,11 @@
+/* header  */
 .nav__container-logo {
     display: block;
     margin: 0px auto;
     width : 50%;
 }
 
-.navbar {
+.nav__container {
     background: linear-gradient(45deg, white,#00CED1,#00CED1, #5F9EA0,white);
 }
 
@@ -14,94 +15,120 @@
     }
 }
 
-section {
-    background-color: rgba(128, 128, 128, 0.082);
+.navbar-toggler-icon {
+    font-size: 2.5rem;
 }
 
-main {
-    background-color: rgba(128, 128, 128, 0.082);
+/* body */
+body {
+    background-color: #e6fff7;
 }
 
-.container__asso {
-    background-color: green;
+/* Sections */
+.container__asso, .container__cats-title, .container__kitten-title {
+    border: solid 2px #1f7a7a;
     text-align: center;
     font-size: 50px;
-    margin-top: 150px;
+    margin-top: 80px;
     margin-bottom: 30px;
+    text-decoration: underline;
+    padding: 15px;
+    border-radius: 20px;
 }
 
-.container__asso-history {
-    background-color: grey;
+.container__asso{
+    background: linear-gradient(45deg, white,#00CED1,#00CED1, #5F9EA0,white);
+}
+
+.container__cats-title {
+    background: linear-gradient(45deg, white, #ac7339, white);
+}
+
+.container__kitten-title {
+    background: linear-gradient(45deg, #e0e0eb, #a2a2c3, #e0e0eb);
+}
+
+
+/* section 1 */
+.container__asso-history, .container__asso-day {
     font-size: 28px;
 }
 
-.container__asso-history-title {
-    background-color: aqua;
+.container__asso-history-title, .container__asso-day-title {
     margin-left: 20%;
     font-weight: bold;
     font-size: 40px;
     border-radius: 20px;
     padding: 15px 70px;
-    border: solid 3px blue;
+    border: solid 3px #1f7a7a;
+}
+
+.container__asso-history-title {
+    background-color: #70dbdb;
+}
+
+.container__asso-day-title {
+    background-color: #2eb8b8;
 }
 
 .container__asso-history-title:hover {
-    background-color: pink;
+    background-color: #66b3ff;
+}
+
+.container__asso-day-title:hover {
+    background-color: #66ffcc;
 }
 
 .container__asso-history-title:hover ~ .container__asso-history-text {
         opacity: 1;
         pointer-events:inherit;
         position : relative;
+        background-color: #66b3ff;
+        text-align: justify;
 }
 
-.container__asso-history-text {
-    background-color: orange;
+.container__asso-history-text, .container__asso-day-text {
     font-size: 28px;
     opacity: 0;
     pointer-events: none;
     position : absolute;
-    transition: all 0.5s ease-out;
+    transition: all 1s ease-out;
 }
 
 .container__asso-day {
-    background-color: yellow;
-    font-size: 28px;
     position: relative;
-}
-
-.container__asso-day-title {
-    background-color: blue;
-    margin-left: 20%;
-    font-weight: bold;
-    font-size: 40px;
-    border-radius: 20px;
-    padding: 15px 70px;
-    border: solid 3px aqua;
-}
-
-.container__asso-day-title:hover {
-    background-color: pink;
 }
 
 .container__asso-day-title:hover ~ .container__asso-day-text {
         opacity: 1;
         pointer-events:inherit;
         position : relative;
+        background-color: #66ffcc;
 }
 
-.container__asso-day-text {
-    background-color: brown;
-    opacity: 0;
-    pointer-events: none;
-    position : absolute;
-    transition: all 0.5s ease-out;
+/* section 2 & 3*/
+
+.cats, .kitten {
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.cats {
+    background-color: #e6ccb3;
+}
+
+.kitten {
+    background-color: #b3b3cc;
+}
+
+.container__cats-text {
+    text-align: center;
+    font-size: 20px;
 }
 
 .container__cats {
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
     justify-content: center;
     align-items: center;
 }
@@ -112,20 +139,16 @@ main {
     }
 }
 
-
-.container__cats-title {
-    background-color: aquamarine;
-    text-align: center;
-    font-size: 48px;
-    margin-top: 60px;
+.img-head {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top : 50px;
+    border-radius: 20px;
 }
 
-.container__cats-text {
-    background-color: aquamarine;
-    text-align: center;
-    font-size: 20px;
-}
-
+/* card  */
 
 .card {
     padding: 3px;
@@ -136,30 +159,14 @@ main {
 }
 
 .card-img-top {
-    /* max-width: fit-content; */
+    max-width: fit-content;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 20px;
 }
 
-.cats {
-    background-color: blueviolet;
-    margin-top: 150px;
-    margin-bottom: 30px;
-}
-
-.kitten {
-    background-color: yellowgreen;
-    margin-top: 150px;
-    margin-bottom: 30px;
-}
-
-.img-head {
-    width: 20%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+/* footer */
 
 .container__footer {
     display: flex;
@@ -177,7 +184,6 @@ main {
     margin-top: 30px;
     font-size: 25px;
     border-radius: 20px;
-
 }
 
 .container__footer-social {
