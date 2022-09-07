@@ -207,9 +207,7 @@ footer {
 }
 
 @media screen and (width >= 800px) {
-    .nav__container-logo{
-        width: 80%;
-    }
+
     .navbar-toggler-icon {
         font-size: 2.5rem;
     }
